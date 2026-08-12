@@ -1,0 +1,21 @@
+[package]
+name = "feltdb-cli"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[[bin]]
+name = "feltdb"
+path = "src/main.rs"
+
+[dependencies]
+intent-core = { path = "../intent-core" }
+intent-engine = { path = "../intent-engine" }
+intent-planner = { path = "../intent-planner" }
+intent-store = { path = "../intent-store" }
+intent-feltdb = { path = "../intent-feltdb" }
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile = "3"

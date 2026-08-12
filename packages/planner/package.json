@@ -1,0 +1,11 @@
+{
+  "name": "@feltdb/planner",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@feltdb/contract": "^0.1.0",
+    "@feltdb/evidence": "^0.1.0",
+    "@feltdb/inference": "^0.1.0"
+  }
+}
