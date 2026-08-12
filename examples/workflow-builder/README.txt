@@ -1,0 +1,1 @@
+Intent MVP scaffold placeholder.

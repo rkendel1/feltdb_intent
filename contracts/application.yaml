@@ -1,0 +1,10 @@
+profile: application
+required:
+  - outcome
+  - actors
+  - entities
+  - workflows
+  - authorization
+  - integrations
+  - runtime
+  - deployment

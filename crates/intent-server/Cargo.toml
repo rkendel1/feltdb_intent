@@ -1,0 +1,10 @@
+[package]
+name = "intent-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+intent-core = { path = "../intent-core" }
+intent-engine = { path = "../intent-engine" }
+serde.workspace = true

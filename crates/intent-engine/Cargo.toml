@@ -1,0 +1,15 @@
+[package]
+name = "intent-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+intent-core = { path = "../intent-core" }
+intent-store = { path = "../intent-store" }
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+intent-feltdb = { path = "../intent-feltdb" }
