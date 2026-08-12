@@ -1,0 +1,10 @@
+[package]
+name = "feltdb-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+feltdb-contract = { path = "../feltdb-contract" }
+feltdb-inference = { path = "../feltdb-inference" }
+serde.workspace = true

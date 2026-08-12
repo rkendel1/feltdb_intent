@@ -98,6 +98,68 @@ dependencies = [
 ]
 
 [[package]]
+name = "feltdb-adapter"
+version = "0.1.0"
+dependencies = [
+ "feltdb-contract",
+ "feltdb-store",
+]
+
+[[package]]
+name = "feltdb-contract"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "serde",
+ "serde_json",
+ "sha2",
+]
+
+[[package]]
+name = "feltdb-contract-wasm"
+version = "0.1.0"
+dependencies = [
+ "feltdb-contract",
+]
+
+[[package]]
+name = "feltdb-inference"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "feltdb-adapter",
+ "feltdb-contract",
+ "feltdb-store",
+ "serde_json",
+ "thiserror",
+]
+
+[[package]]
+name = "feltdb-runtime"
+version = "0.1.0"
+dependencies = [
+ "feltdb-contract",
+ "feltdb-inference",
+]
+
+[[package]]
+name = "feltdb-server"
+version = "0.1.0"
+dependencies = [
+ "feltdb-contract",
+ "feltdb-inference",
+ "serde",
+]
+
+[[package]]
+name = "feltdb-store"
+version = "0.1.0"
+dependencies = [
+ "feltdb-contract",
+ "thiserror",
+]
+
+[[package]]
 name = "find-msvc-tools"
 version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -159,68 +221,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f31827a206f56af32e590ba56d5d2d085f558508192593743f16b2306495269f"
 dependencies = [
  "cc",
-]
-
-[[package]]
-name = "intent-core"
-version = "0.1.0"
-dependencies = [
- "chrono",
- "serde",
- "serde_json",
- "sha2",
-]
-
-[[package]]
-name = "intent-engine"
-version = "0.1.0"
-dependencies = [
- "chrono",
- "intent-core",
- "intent-feltdb",
- "intent-store",
- "serde_json",
- "thiserror",
-]
-
-[[package]]
-name = "intent-feltdb"
-version = "0.1.0"
-dependencies = [
- "intent-core",
- "intent-store",
-]
-
-[[package]]
-name = "intent-runtime"
-version = "0.1.0"
-dependencies = [
- "intent-core",
- "intent-engine",
-]
-
-[[package]]
-name = "intent-server"
-version = "0.1.0"
-dependencies = [
- "intent-core",
- "intent-engine",
- "serde",
-]
-
-[[package]]
-name = "intent-store"
-version = "0.1.0"
-dependencies = [
- "intent-core",
- "thiserror",
-]
-
-[[package]]
-name = "intent-wasm"
-version = "0.1.0"
-dependencies = [
- "intent-core",
 ]
 
 [[package]]

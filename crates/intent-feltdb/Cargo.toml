@@ -1,9 +1,0 @@
-[package]
-name = "intent-feltdb"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
-
-[dependencies]
-intent-core = { path = "../intent-core" }
-intent-store = { path = "../intent-store" }

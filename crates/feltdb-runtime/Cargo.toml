@@ -1,0 +1,9 @@
+[package]
+name = "feltdb-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+feltdb-contract = { path = "../feltdb-contract" }
+feltdb-inference = { path = "../feltdb-inference" }

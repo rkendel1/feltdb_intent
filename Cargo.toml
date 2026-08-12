@@ -1,12 +1,12 @@
 [workspace]
 members = [
-  "crates/intent-core",
-  "crates/intent-engine",
-  "crates/intent-runtime",
-  "crates/intent-store",
-  "crates/intent-feltdb",
-  "crates/intent-wasm",
-  "crates/intent-server",
+  "crates/feltdb-contract",
+  "crates/feltdb-inference",
+  "crates/feltdb-runtime",
+  "crates/feltdb-store",
+  "crates/feltdb-adapter",
+  "crates/feltdb-contract-wasm",
+  "crates/feltdb-server",
 ]
 resolver = "2"
 

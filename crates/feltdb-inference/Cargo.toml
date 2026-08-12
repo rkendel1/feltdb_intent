@@ -1,0 +1,15 @@
+[package]
+name = "feltdb-inference"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+feltdb-contract = { path = "../feltdb-contract" }
+feltdb-store = { path = "../feltdb-store" }
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+feltdb-adapter = { path = "../feltdb-adapter" }

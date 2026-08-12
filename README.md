@@ -4,20 +4,21 @@ Deterministic Intent/Contract Engine MVP scaffold.
 
 ## Workspace
 
-- `crates/intent-core`: canonical contract, gaps, evidence, policy, revisions, hashing
-- `crates/intent-engine`: deterministic evaluate/next-loop mechanics
-- `crates/intent-store`: contract store trait
-- `crates/intent-feltdb`: FeltDB-style durable adapter prototype
-- `crates/intent-runtime`: action/runtime mapping
-- `crates/intent-wasm`: canonical hash bindings
-- `crates/intent-server`: API request models
+- `crates/feltdb-contract`: canonical contract, gaps, evidence, policy, revisions, hashing
+- `crates/feltdb-inference`: deterministic evaluate/next-loop mechanics
+- `crates/feltdb-store`: contract store trait
+- `crates/feltdb-adapter`: FeltDB-style durable adapter prototype
+- `crates/feltdb-runtime`: action/runtime mapping
+- `crates/feltdb-contract-wasm`: canonical hash bindings
+- `crates/feltdb-server`: API request models
 
 ## JS packages
 
-- `@feltdb/intent-loop`
-- `@feltdb/intent-webllm`
-- `@feltdb/intent-client`
-- `@feltdb/intent-react`
+- `@feltdb/contract`: Contract types, facts, gaps, provenance, confidence, graph representation
+- `@feltdb/inference`: Deterministic inference loop/orchestration and gap resolution
+- `@feltdb/ai`: LLM/WebLLM provider adapters and proposal generation
+- `@feltdb/client`: FeltDB persistence/evidence/application-state transport
+- `@feltdb/react`: Optional React bindings/UI hooks
 
 ## Test
 

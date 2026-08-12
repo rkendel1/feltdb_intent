@@ -1,0 +1,8 @@
+[package]
+name = "feltdb-contract-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+feltdb-contract = { path = "../feltdb-contract" }

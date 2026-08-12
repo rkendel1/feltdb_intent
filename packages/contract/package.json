@@ -1,0 +1,7 @@
+{
+  "name": "@feltdb/contract",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "description": "Contract types, facts, gaps, provenance, confidence, graph representation"
+}
