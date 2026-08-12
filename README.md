@@ -64,6 +64,59 @@ cargo test --test conformance
 cargo test --lib intent_planner
 ```
 
+## CLI
+
+The `feltdb` CLI provides contract inspection and management.
+
+```bash
+# Build the CLI
+cargo build --release
+
+# Run CLI
+./target/release/feltdb --help
+
+# Contract commands
+feltdb contract list                                    # List and usage info
+feltdb contract inspect <contract-id>                 # Show contract state
+feltdb contract gaps <contract-id>                    # Analyze contract gaps
+feltdb contract infer <contract-id> --input "TEXT"   # Run inference
+feltdb contract validate <contract-id>                # Validate completeness
+feltdb contract compile <contract-id>                 # Compile to proposal
+
+# Inference session commands
+feltdb inference replay <session-id>                  # Replay session trace
+feltdb inference inspect <session-id>                # Inspect session state
+```
+
+Example:
+
+```bash
+./target/release/feltdb contract infer app-001 --input "Recruiters submit candidates"
+```
+
+Output:
+
+```
+Contract: app-001
+Input: Recruiters submit candidates
+
+Running inference...
+
+Observations extracted:
+  - actors.recruiter (confidence: 0.95)
+  - verbs.submit (confidence: 0.95)
+  - workflow.approval (confidence: 0.78)
+
+Confidence updated:
+  - Model: 87%
+  - Contract: 74%
+
+Gaps remaining: 4
+Blocking gaps: 1
+
+Next action: ASK_USER -> actors.approver
+```
+
 ## Conformance Tests
 
 The test suite demonstrates all key scenarios required by PR2:
