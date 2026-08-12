@@ -1,0 +1,10 @@
+profile: workflow
+required:
+  - outcome
+  - actors
+  - triggers
+  - states
+  - transitions
+  - actions
+  - failure_modes
+  - authorization

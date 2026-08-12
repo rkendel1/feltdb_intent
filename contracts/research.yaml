@@ -1,0 +1,10 @@
+profile: research
+required:
+  - question
+  - scope
+  - hypotheses
+  - evidence
+  - sources
+  - claims
+  - contradictions
+  - conclusion
