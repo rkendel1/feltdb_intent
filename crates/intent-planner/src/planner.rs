@@ -8,7 +8,6 @@
 
 use intent_core::{ContractGap, IntentContract, GapSeverity};
 use serde::{Deserialize, Serialize};
-use serde_json::Value;
 use crate::PlannerAction;
 
 /// Represents a plan for contract completion
@@ -162,7 +161,7 @@ mod tests {
 
     #[test]
     fn test_compile_readiness() {
-        let contract = IntentContract::new("test-1", ContractProfile::Application);
+        let _contract = IntentContract::new("test-1", ContractProfile::Application);
         let plan = ContractPlan::new("test-1");
 
         assert!(!plan.can_compile()); // No progress

@@ -8,6 +8,7 @@ members = [
   "crates/intent-wasm",
   "crates/intent-server",
   "crates/intent-planner",
+  "crates/feltdb-cli",
 ]
 resolver = "2"
 
